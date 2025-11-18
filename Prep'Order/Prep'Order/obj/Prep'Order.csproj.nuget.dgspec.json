@@ -1,0 +1,71 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\theoc\\Desktop\\projet\\2ième année\\AP_2\\Prep'Order\\Prep'Order\\Prep'Order\\Prep'Order\\Prep'Order.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\theoc\\Desktop\\projet\\2ième année\\AP_2\\Prep'Order\\Prep'Order\\Prep'Order\\Prep'Order\\Prep'Order.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\theoc\\Desktop\\projet\\2ième année\\AP_2\\Prep'Order\\Prep'Order\\Prep'Order\\Prep'Order\\Prep'Order.csproj",
+        "projectName": "Prep'Order",
+        "projectPath": "C:\\Users\\theoc\\Desktop\\projet\\2ième année\\AP_2\\Prep'Order\\Prep'Order\\Prep'Order\\Prep'Order\\Prep'Order.csproj",
+        "packagesPath": "C:\\Users\\theoc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\theoc\\Desktop\\projet\\2ième année\\AP_2\\Prep'Order\\Prep'Order\\Prep'Order\\Prep'Order\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\theoc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
