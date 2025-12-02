@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\theoc\\Desktop\\projet\\2ième année\\AP_2\\Prep'Order\\Prep'Order\\Prep'Order\\Prep'Order\\Prep'Order.csproj": {}
+    "C:\\Users\\julie\\Documents\\test\\Prep-Order\\Prep'Order\\Prep'Order\\Prep'Order.csproj": {}
   },
   "projects": {
-    "C:\\Users\\theoc\\Desktop\\projet\\2ième année\\AP_2\\Prep'Order\\Prep'Order\\Prep'Order\\Prep'Order\\Prep'Order.csproj": {
+    "C:\\Users\\julie\\Documents\\test\\Prep-Order\\Prep'Order\\Prep'Order\\Prep'Order.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\theoc\\Desktop\\projet\\2ième année\\AP_2\\Prep'Order\\Prep'Order\\Prep'Order\\Prep'Order\\Prep'Order.csproj",
+        "projectUniqueName": "C:\\Users\\julie\\Documents\\test\\Prep-Order\\Prep'Order\\Prep'Order\\Prep'Order.csproj",
         "projectName": "Prep'Order",
-        "projectPath": "C:\\Users\\theoc\\Desktop\\projet\\2ième année\\AP_2\\Prep'Order\\Prep'Order\\Prep'Order\\Prep'Order\\Prep'Order.csproj",
-        "packagesPath": "C:\\Users\\theoc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\theoc\\Desktop\\projet\\2ième année\\AP_2\\Prep'Order\\Prep'Order\\Prep'Order\\Prep'Order\\obj\\",
+        "projectPath": "C:\\Users\\julie\\Documents\\test\\Prep-Order\\Prep'Order\\Prep'Order\\Prep'Order.csproj",
+        "packagesPath": "C:\\Users\\julie\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\julie\\Documents\\test\\Prep-Order\\Prep'Order\\Prep'Order\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\theoc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\julie\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
