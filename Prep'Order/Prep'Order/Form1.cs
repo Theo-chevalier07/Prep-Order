@@ -9,7 +9,9 @@ namespace Prep_Order
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Responsable r = new Responsable();  
+            this.Close();
+            r.Show();
         }
     }
 }
