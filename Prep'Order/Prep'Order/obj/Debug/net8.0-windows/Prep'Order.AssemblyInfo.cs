@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Prep\'Order")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b5dcd7e23634b8449d06967db89583086592a28b")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7bd5ba1d8544976c7cbeaf1f8d0ac02ff1bebb70")]
+>>>>>>> origin/Release
 [assembly: System.Reflection.AssemblyProductAttribute("Prep\'Order")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Prep\'Order")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
