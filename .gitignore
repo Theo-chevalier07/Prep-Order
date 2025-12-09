@@ -22,3 +22,9 @@ Prep'Order/.vs/Prep'Order/FileContentIndex/6f3c600c-eb7a-447e-94a4-9098221717b7.
 *.vsidx
 
 Prep'Order/Prep'Order/obj/Debug/net8.0-windows/Prep'Order.csproj.BuildWithSkipAnalyzers
+
+Prep'Order/Prep'Order/obj/Debug/net8.0-windows/Prep'Order.designer.runtimeconfig.json
+
+Prep'Order/Prep'Order/obj/Debug/net8.0-windows/Prep'Order.AssemblyInfoInputs.cache
+
+Prep'Order/Prep'Order/obj/Debug/net8.0-windows/Prep'Order.AssemblyInfo.cs
