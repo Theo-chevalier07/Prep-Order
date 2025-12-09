@@ -30,7 +30,7 @@
         {
             identifiant = new TextBox();
             mdp = new TextBox();
-            button1 = new Button();
+            btn_connexion = new Button();
             SuspendLayout();
             // 
             // identifiant
@@ -49,22 +49,22 @@
             mdp.TabIndex = 1;
             mdp.Text = "Mot de passe";
             // 
-            // button1
+            // btn_connexion
             // 
-            button1.Location = new Point(331, 297);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 2;
-            button1.Text = "Connexion";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            btn_connexion.Location = new Point(331, 297);
+            btn_connexion.Name = "btn_connexion";
+            btn_connexion.Size = new Size(94, 29);
+            btn_connexion.TabIndex = 2;
+            btn_connexion.Text = "Connexion";
+            btn_connexion.UseVisualStyleBackColor = true;
+            btn_connexion.Click += button1_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button1);
+            Controls.Add(btn_connexion);
             Controls.Add(mdp);
             Controls.Add(identifiant);
             Name = "Form1";
@@ -77,6 +77,6 @@
 
         private TextBox identifiant;
         private TextBox mdp;
-        private Button button1;
+        private Button btn_connexion;
     }
 }
