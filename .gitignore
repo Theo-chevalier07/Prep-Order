@@ -19,37 +19,37 @@ Prep'Order/.vs/Prep'Order/FileContentIndex/1d3ce278-9be7-484d-ba6f-db4d293ce3b6.
 
 Prep'Order/.vs/Prep'Order/FileContentIndex/6f3c600c-eb7a-447e-94a4-9098221717b7.vsidx
 
-<<<<<<< Updated upstream
-Prep'Order/.vs/Prep'Order/v17/.suo
-
-Prep'Order/.vs/Prep'Order/v17/
-
-Prep'Order/Prep'Order/bin/Debug/net8.0-windows/Prep'Order.dll
-
-Prep'Order/Prep'Order/bin/Debug/net8.0-windows/Prep'Order.exe
-
-Prep'Order/Prep'Order/bin/Debug/net8.0-windows/Prep'Order.pdb
+Prep'Order/Prep'Order/obj/Debug/net8.0-windows/refint/Prep'Order.dll
 =======
+
 *.vsidx
->>>>>>> Stashed changes
+Prep'Order/.vs/Prep'Order/DesignTimeBuild/.dtbcache.v2
 
-Prep'Order/Prep'Order/obj/Debug/net8.0-windows/Prep'Order.AssemblyInfo.cs
-
-Prep'Order/Prep'Order/obj/Debug/net8.0-windows/Prep'Order.AssemblyInfoInputs.cache
-
-Prep'Order/Prep'Order/obj/Debug/net8.0-windows/Prep'Order.csproj.BuildWithSkipAnalyzers
-<<<<<<< Updated upstream
-
-Prep'Order/Prep'Order/obj/Debug/net8.0-windows/Prep'Order.csproj.GenerateResource.cache
-
-Prep'Order/Prep'Order/obj/Debug/net8.0-windows/Prep'Order.sourcelink.json
 
 Prep'Order/Prep'Order/obj/Debug/net8.0-windows/ref/Prep'Order.dll
 
-Prep'Order/Prep'Order/obj/Debug/net8.0-windows/refint/Prep'Order.dll
+Prep'Order/Prep'Order/obj/Debug/net8.0-windows/Prep'Order.sourcelink.json
+Prep'Order/Prep'Order/obj/Debug/net8.0-windows/Prep'Order.csproj.GenerateResource.cache
 
-Prep'Order/.vs/Prep'Order/DesignTimeBuild/.dtbcache.v2
 
-*.vsidx
-=======
+<<<<<<< Updated upstream
+Prep'Order/Prep'Order/obj/Debug/net8.0-windows/Prep'Order.csproj.BuildWithSkipAnalyzers
+
+Prep'Order/Prep'Order/obj/Debug/net8.0-windows/Prep'Order.AssemblyInfoInputs.cache
+
+Prep'Order/Prep'Order/obj/Debug/net8.0-windows/Prep'Order.AssemblyInfo.cs
+
 >>>>>>> Stashed changes
+*.vsidx
+Prep'Order/Prep'Order/bin/Debug/net8.0-windows/Prep'Order.pdb
+=======
+
+Prep'Order/Prep'Order/bin/Debug/net8.0-windows/Prep'Order.exe
+
+Prep'Order/Prep'Order/bin/Debug/net8.0-windows/Prep'Order.dll
+
+Prep'Order/.vs/Prep'Order/v17/
+Prep'Order/.vs/Prep'Order/v17/.suo
+
+<<<<<<< Updated upstream
+Prep'Order/Prep'Order/obj/Debug/net8.0-windows/Prep'Order.designer.runtimeconfig.json
