@@ -26,3 +26,5 @@ Prep'Order/Prep'Order/obj/Debug/net8.0-windows/Prep'Order.designer.runtimeconfig
 Prep'Order/Prep'Order/obj/Debug/net8.0-windows/Prep'Order.csproj.BuildWithSkipAnalyzers
 
 Prep'Order/Prep'Order/obj/Debug/net8.0-windows/Prep'Order.AssemblyInfo.cs
+
+*.vsidx
