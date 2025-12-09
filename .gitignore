@@ -18,3 +18,7 @@ Prep'Order/.vs/Prep'Order/FileContentIndex/43cb39ec-eae2-4f84-9d36-7062dd724f12.
 Prep'Order/.vs/Prep'Order/FileContentIndex/1d3ce278-9be7-484d-ba6f-db4d293ce3b6.vsidx
 
 Prep'Order/.vs/Prep'Order/FileContentIndex/6f3c600c-eb7a-447e-94a4-9098221717b7.vsidx
+
+*.vsidx
+
+Prep'Order/Prep'Order/obj/Debug/net8.0-windows/Prep'Order.csproj.BuildWithSkipAnalyzers
