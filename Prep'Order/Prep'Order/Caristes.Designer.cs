@@ -64,6 +64,7 @@
             etatDesRacksStockageToolStripMenuItem1.Name = "etatDesRacksStockageToolStripMenuItem1";
             etatDesRacksStockageToolStripMenuItem1.Size = new Size(251, 26);
             etatDesRacksStockageToolStripMenuItem1.Text = "Etat des racks stockage";
+            etatDesRacksStockageToolStripMenuItem1.Click += etatDesRacksStockageToolStripMenuItem1_Click;
             // 
             // Caristes
             // 
