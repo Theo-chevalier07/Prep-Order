@@ -28,40 +28,61 @@
         /// </summary>
         private void InitializeComponent()
         {
-            listView1 = new ListView();
-            columnHeader1 = new ColumnHeader();
-            columnHeader2 = new ColumnHeader();
-            columnHeader3 = new ColumnHeader();
+            lv1 = new ListView();
+            CodeEmplacement = new ColumnHeader();
+            Zone = new ColumnHeader();
+            Produit = new ColumnHeader();
             columnHeader4 = new ColumnHeader();
             SuspendLayout();
             // 
-            // listView1
+            // lv1
             // 
-            listView1.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3, columnHeader4 });
-            listView1.Location = new Point(90, 73);
-            listView1.Name = "listView1";
-            listView1.Size = new Size(401, 251);
-            listView1.TabIndex = 0;
-            listView1.UseCompatibleStateImageBehavior = false;
-            listView1.View = View.Details;
+            lv1.Columns.AddRange(new ColumnHeader[] { CodeEmplacement, Zone, Produit, columnHeader4 });
+            lv1.Location = new Point(90, 73);
+            lv1.Name = "lv1";
+            lv1.Size = new Size(576, 251);
+            lv1.TabIndex = 0;
+            lv1.UseCompatibleStateImageBehavior = false;
+            lv1.View = View.Details;
+            // 
+            // CodeEmplacement
+            // 
+            CodeEmplacement.Text = "CodeEmplacement";
+            CodeEmplacement.Width = 100;
+            // 
+            // Zone
+            // 
+            Zone.Text = "Zone";
+            Zone.Width = 100;
+            // 
+            // Produit
+            // 
+            Produit.Text = "Produit";
+            Produit.Width = 100;
+            // 
+            // columnHeader4
+            // 
+            columnHeader4.Text = "Quantite";
+            columnHeader4.Width = 100;
             // 
             // etatDesRacksStockage
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(listView1);
+            Controls.Add(lv1);
             Name = "etatDesRacksStockage";
             Text = "etatDesRacksStockage";
+            Load += etatDesRacksStockage_Load;
             ResumeLayout(false);
         }
 
         #endregion
 
-        private ListView listView1;
-        private ColumnHeader columnHeader1;
-        private ColumnHeader columnHeader2;
-        private ColumnHeader columnHeader3;
+        private ListView lv1;
+        private ColumnHeader CodeEmplacement;
+        private ColumnHeader Zone;
+        private ColumnHeader Produit;
         private ColumnHeader columnHeader4;
     }
 }
