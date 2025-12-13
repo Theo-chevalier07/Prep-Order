@@ -25,5 +25,13 @@ namespace Prep_Order
             demandesPreparateur.WindowState = FormWindowState.Maximized;
             demandesPreparateur.Show();
         }
+
+        private void etatDesRacksStockageToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            etatDesRacksStockage racks = new etatDesRacksStockage();
+            racks.MdiParent = this;
+            racks.WindowState = FormWindowState.Maximized;
+            racks.Show();
+        }
     }
 }

@@ -75,8 +75,10 @@ namespace Prep_Order
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@id", item.SubItems[0].Text);
                     cmd.ExecuteNonQuery();
+                    
                     using (SqlDataReader reader = cmd.ExecuteReader())
                         {
+                        MessageBox.Show("Déplacement effectuer de la palette : "+ item.SubItems[0].Text);
                         Form parent = this.MdiParent;
                         this.Close();
                         demandesPreparateur f = new demandesPreparateur();
