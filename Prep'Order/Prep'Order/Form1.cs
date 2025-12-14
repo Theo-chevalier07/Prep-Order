@@ -45,6 +45,14 @@ namespace Prep_Order
                                     this.Hide();
 
                                 }
+                                if (role == 2)
+                                {
+
+                                    Preparateurs r = new Preparateurs();
+                                    r.Show();
+                                    this.Hide();
+
+                                }
                                 if (role == 3)
                                 {
                                     Caristes r = new Caristes();
