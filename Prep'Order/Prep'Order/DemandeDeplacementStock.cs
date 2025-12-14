@@ -5,24 +5,24 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Prep_Order
 {
-    public partial class demandesPreparateur : Form
+    public partial class DemandeDeplacementStock : Form
     {
-        public demandesPreparateur()
+        public DemandeDeplacementStock()
         {
             InitializeComponent();
         }
 
-        private void demandesPreparateur_Load(object sender, EventArgs e)
+        private void DemandeDeplacementStock_Load(object sender, EventArgs e)
         {
-
             string connectionString = "Server=JULIEN;Database=PrepOrder;Trusted_Connection=True;TrustServerCertificate=True;";
-            string query = "Select D.DemandeID, NomProduit, QuantiteDemandee, D.ZoneID from DemandePalette D inner join Produit P on D.ProduitID = P.ProduitID inner join CommandeLigne C on D.LigneId = C.LigneId inner join Reapprovisionnement R on D.DemandeID = R.DemandeID where CaristeID = @id and Statut <> 'Terminé'";
+            string query = "SELECT E.CodeEmplacement, Z.NomZone, P.NomProduit, S.Quantite FROM Stock S INNER JOIN Emplacement E ON S.EmplacementID = E.EmplacementID INNER JOIN Produit P ON S.ProduitID = P.ProduitID INNER JOIN Zone Z ON E.ZoneID = Z.ZoneID WHERE Z.NomZone <> 'Picking' ORDER BY Z.NomZone, E.CodeEmplacement;";
             int role;
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
@@ -35,16 +35,34 @@ namespace Prep_Order
                     {
                         while (reader.Read())
                         {
-                            ListViewItem listItem = new ListViewItem(reader.GetInt32(0).ToString());
+                            ListViewItem listItem = new ListViewItem(reader.GetString(0));
                             listItem.SubItems.Add(reader.GetString(1));
-                            listItem.SubItems.Add(reader.GetInt32(2).ToString());
+                            listItem.SubItems.Add(reader.GetString(2));
                             listItem.SubItems.Add(reader.GetInt32(3).ToString());
                             lv1.Items.Add(listItem);
                             lv1.ItemSelectionChanged += lv1_ItemSelectionChanged;
                         }
                     }
                 }
-            } 
+            }
+
+            query = "SELECT U.Nom FROM Utilisateur U INNER JOIN RoleUtilisateur R ON U.RoleID = R.RoleID WHERE R.NomRole = 'Cariste'";
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            cb1.Items.Add(reader.GetString(0));
+                        }
+                    }
+                }
+            }
         }
         private void lv1_ItemSelectionChanged(object sender, ListViewItemSelectionChangedEventArgs e)
         {
@@ -68,27 +86,22 @@ namespace Prep_Order
             {
                 conn.Open();
 
-                using (SqlCommand cmd = new SqlCommand("changerTerminéCommande", conn))
+                using (SqlCommand cmd = new SqlCommand("AjouterDemandePalette", conn))
                 {
-                    
-                        ListViewItem item = lv1.SelectedItems[0];
+
+                    ListViewItem item = lv1.SelectedItems[0];
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@id", item.SubItems[0].Text);
+                    cmd.Parameters.AddWithValue("@CodeStock", item.SubItems[0].Text);
+                    cmd.Parameters.AddWithValue("@NomCariste", cb1.Text);
                     cmd.ExecuteNonQuery();
-                    
+
                     using (SqlDataReader reader = cmd.ExecuteReader())
-                        {
-                        MessageBox.Show("Déplacement effectuer de la palette : "+ item.SubItems[0].Text);
-                        Form parent = this.MdiParent;
-                        this.Close();
-                        demandesPreparateur f = new demandesPreparateur();
-                        f.MdiParent = parent;
-                        f.WindowState = FormWindowState.Maximized;
-                        f.Show();
+                    {
+                        MessageBox.Show("Demande effectuer");
+                        
                     }
                 }
             }
-
         }
     }
 }
