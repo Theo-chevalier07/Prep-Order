@@ -16,8 +16,8 @@ namespace Prep_Order
             string login = identifiant.Text;
             string password = mdp.Text;
             Boolean trouve = false;
-            string connectionString = "Server=JULIEN;Database=bdd_prep-order;Trusted_Connection=True;TrustServerCertificate=True;";
-            string query = "SELECT identifiant, mdp, idRole FROM [User]";
+            string connectionString = "Server=JULIEN;Database=PrepOrder;Trusted_Connection=True;TrustServerCertificate=True;";
+            string query = "SELECT Login, MotDePasseHash, RoleID, UtilisateurId  FROM [Utilisateur]";
             int role; 
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
@@ -32,14 +32,34 @@ namespace Prep_Order
 
                             string loginBase = reader.GetString(0);
                             string mdp = reader.GetString(1);
-                            role = reader.GetInt32(2);
-                            MessageBox.Show(role.ToString());
-                            if(role == 1)
+                            if (loginBase == login && mdp == password)
                             {
-                                Responsable r = new Responsable();
-                                r.Show();
-                                this.Hide();
-                                
+                                trouve = true;
+                                role = reader.GetInt32(2);
+                                Public.id = reader.GetInt32(3);
+                                if (role == 1)
+                                {
+                                    
+                                    Responsable r = new Responsable();
+                                    r.Show();
+                                    this.Hide();
+
+                                }
+                                if (role == 2)
+                                {
+
+                                    Preparateurs r = new Preparateurs();
+                                    r.Show();
+                                    this.Hide();
+
+                                }
+                                if (role == 3)
+                                {
+                                    Caristes r = new Caristes();
+                                    r.Show();
+                                    this.Hide();
+
+                                }
                             }
                         }
                     }
