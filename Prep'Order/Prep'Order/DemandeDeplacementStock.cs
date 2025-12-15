@@ -91,15 +91,14 @@ namespace Prep_Order
 
                     ListViewItem item = lv1.SelectedItems[0];
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@CodeStock", item.SubItems[0].Text);
+                    cmd.Parameters.AddWithValue("@CodeEmplacement", item.SubItems[0].Text);
                     cmd.Parameters.AddWithValue("@NomCariste", cb1.Text);
+                    cmd.Parameters.AddWithValue("@PreparateurID", Public.id);
                     cmd.ExecuteNonQuery();
 
-                    using (SqlDataReader reader = cmd.ExecuteReader())
-                    {
-                        MessageBox.Show("Demande effectuer");
+                    
+                    MessageBox.Show("Demande effectuer");
                         
-                    }
                 }
             }
         }
